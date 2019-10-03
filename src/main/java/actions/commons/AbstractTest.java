@@ -1,6 +1,5 @@
 package actions.commons;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -33,14 +32,15 @@ public class AbstractTest {
     }
 
     public void closeBrowser() {
-        driver.close();
+        if (driver != null) {
+            driver.close();
+        }
     }
 
     public void verifyTitlePage(String titleExpect) {
         String title = driver.getTitle();
         Assert.assertTrue(title.equals(titleExpect));
     }
-
 
 
     public Integer format_string_to_int(String str_num) {
