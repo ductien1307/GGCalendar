@@ -6,6 +6,7 @@
     <groupId>DIGINET</groupId>
     <artifactId>LEMONWEB</artifactId>
     <version>4.0</version>
+         <!-Tien edit->
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
